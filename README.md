@@ -1,7 +1,3 @@
-Here is the updated README file with references to the screenshots in the `Screens` folder:
-
----
-
 # CFAR Algorithm Project
 
 ## Project Overview
@@ -33,9 +29,13 @@ This project implements two types of CFAR (Constant False Alarm Rate) algorithms
 - **Description:** Screenshots of results from various stages of the project.
 - **Contents:**
   - `screen_from_gui_GOCA.png`: Screenshot of the running GUI app for GOCA.
+    ![Running GUI App for GOCA](screens/screen_from_gui_GOCA.png)
   - `screen_of_gui_matlab.png`: Screenshot of the MATLAB code and the UI of App Designer.
+    ![MATLAB Code and UI of App Designer](screens/screen_of_gui_matlab.png)
   - `screen_of_rtl.png`: Screenshot of the RTL written in SystemVerilog.
-  - `screen_of_questasim_result.png`: Screenshot of RTL results from simulation in Questasim.
+  ![RTL Written in SystemVerilog](screens/screen_of_rtl.png)
+- `screen_of_questasim_result.png`: Screenshot of RTL results from simulation in Questasim.
+![RTL Results from Questasim Simulation](screens/screen_of_questasim_result.png)
 
 ## How to Run the Project
 
@@ -52,22 +52,6 @@ This project implements two types of CFAR (Constant False Alarm Rate) algorithms
    - `detect_if.sv`: The interface between the DUT and the test bench.
    - `top.sv`: The top-level module integrating the DUT and the test bench.
 3. Simulate the design and verify the results against the screenshots provided in the `Screens` folder.
-
-## Screenshots
-
-Here are some screenshots demonstrating the results of the project:
-
-### Running GUI App for GOCA
-![Running GUI App for GOCA](Screens/screen_from_gui_GOCA.png)
-
-### MATLAB Code and UI of App Designer
-![MATLAB Code and UI of App Designer](Screens/screen_of_gui_matlab.png)
-
-### RTL Written in SystemVerilog
-![RTL Written in SystemVerilog](Screens/screen_of_rtl.png)
-
-### RTL Results from Questasim Simulation
-![RTL Results from Questasim Simulation](Screens/screen_of_questasim_result.png)
 
 ## Contributing
 
