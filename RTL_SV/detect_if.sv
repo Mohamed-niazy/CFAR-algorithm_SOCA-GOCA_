@@ -21,8 +21,6 @@ interface detect_if #(
   logic [INDEX_WIDTH-1:0] index_out;
   logic [INPUT_WIDTH-1:0] power_in;
   logic [INPUT_WIDTH-1:0] max_value;
-
-
   /**********************************/
   //           Clocking             //
   /**********************************/
@@ -31,9 +29,7 @@ interface detect_if #(
     default input #0 output #0;
     output index_in, power_in, reverse, input_valid, eop_in;
     input max_value, index_out, max_valid;
-
   endclocking
-
   /**********************************/
   //           Modports             //
   /**********************************/

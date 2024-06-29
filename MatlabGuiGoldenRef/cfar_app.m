@@ -16,21 +16,16 @@ z=[0];
 index=[];
 %% implementaion cfar_algorithm
 for i=1:length(data_in)/2+(no_of_reference_win+no_of_gard_win)/2
-
 slide_window(2:end)=slide_window(1:length(slide_window)-1);
 slide_window(1)=data_in(i);
-
-
 x=mean(slide_window(1:no_of_reference_win/2));
 y=mean(slide_window(length(slide_window)-no_of_reference_win/2+1:end));
-
 % choose the wanted algorithm (smallest or greatest )
 if mode==1
 x=max([x y])*alpha;
 else    
 x=min([x y])*alpha;
 end
-
 if (i>(no_of_reference_win+no_of_gard_win)/2)
 z=[z x];
 end
