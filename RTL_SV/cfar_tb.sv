@@ -24,8 +24,7 @@ module cfar_tb (
   endtask
   task read_data();
     integer file;
-    file = $fopen("C:/Users/moham/Desktop/matlab_trial/cfar_tb.txt",
-                  "r");  // Open the file for reading
+    file = $fopen("cfar_tb.txt", "r");  // Open the file for reading
     if (file != 0) begin
       for (int i = 0; i < 1024; i++) begin
         $fscanf(file, "%d", data_in[i]);  // Read a line from the file
