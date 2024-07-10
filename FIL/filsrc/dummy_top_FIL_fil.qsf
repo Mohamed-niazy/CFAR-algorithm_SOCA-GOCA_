@@ -1,0 +1,4 @@
+set_location_assignment PIN_AF14 -to sysclk
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sysclk
+set_location_assignment PIN_AA14 -to sysrst
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sysrst

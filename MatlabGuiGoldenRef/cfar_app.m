@@ -37,5 +37,10 @@ index=[index q];
 end 
 end
 end 
+% figure 
+plot(1:512,data_in(1:512),'k');
+hold on;
+% plot(1:512,z(1:512),'r');
+legend('Input Data','CFAR Threshold')
 x=index;
  

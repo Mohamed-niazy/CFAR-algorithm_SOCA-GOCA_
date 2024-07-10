@@ -1,0 +1,77 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2022  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 22.1std.0 Build 915 10/25/2022 SC Standard Edition
+# Date created = 11:33:07  July 10, 2024
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		dummy_top_FIL_fil_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Intel recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CSEMA5F31C6
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 22.1STD.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:33:07  JULY 10, 2024"
+set_global_assignment -name LAST_QUARTUS_VERSION "22.1std.0 Standard Edition"
+set_global_assignment -name CYCLONEII_OPTIMIZATION_TECHNIQUE SPEED
+set_global_assignment -name VERILOG_FILE "C:/Users/moham/Downloads/cfar/RTL_SV/dummy_top_FIL.sv"
+set_global_assignment -name SYSTEMVERILOG_FILE ../../RTL_SV/dummy_top_FIL.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../../RTL_SV/detect_if.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../../RTL_SV/cfar_algorithm.sv
+set_global_assignment -name VHDL_FILE "C:/Users/moham/Downloads/cfar/FIL/filsrc/MWClkMgr.vhd"
+set_global_assignment -name VHDL_FILE "C:/Users/moham/Downloads/cfar/FIL/filsrc/MWAJTAG.vhd"
+set_global_assignment -name VHDL_FILE "C:/Users/moham/Downloads/cfar/FIL/filsrc/MWDPRAM.vhd"
+set_global_assignment -name VHDL_FILE "C:/Users/moham/Downloads/cfar/FIL/filsrc/FILUDPCRC.vhd"
+set_global_assignment -name VHDL_FILE "C:/Users/moham/Downloads/cfar/FIL/filsrc/FILPktMUX.vhd"
+set_global_assignment -name VHDL_FILE "C:/Users/moham/Downloads/cfar/FIL/filsrc/FILCmdProc.vhd"
+set_global_assignment -name VHDL_FILE "C:/Users/moham/Downloads/cfar/FIL/filsrc/MWAsyncFIFO.vhd"
+set_global_assignment -name VHDL_FILE "C:/Users/moham/Downloads/cfar/FIL/filsrc/FILDataProc.vhd"
+set_global_assignment -name VHDL_FILE "C:/Users/moham/Downloads/cfar/FIL/filsrc/MWPKTBuffer.vhd"
+set_global_assignment -name VHDL_FILE "C:/Users/moham/Downloads/cfar/FIL/filsrc/MWUDPPKTBuilder.vhd"
+set_global_assignment -name VHDL_FILE "C:/Users/moham/Downloads/cfar/FIL/filsrc/FILPktProc.vhd"
+set_global_assignment -name VHDL_FILE "C:/Users/moham/Downloads/cfar/FIL/filsrc/FILCommLayer.vhd"
+set_global_assignment -name VHDL_FILE "C:/Users/moham/Downloads/cfar/FIL/filsrc/mwfil_dpscram.vhd"
+set_global_assignment -name VHDL_FILE "C:/Users/moham/Downloads/cfar/FIL/filsrc/mwfil_udfifo.vhd"
+set_global_assignment -name VHDL_FILE "C:/Users/moham/Downloads/cfar/FIL/filsrc/mwfil_bus2dut.vhd"
+set_global_assignment -name VHDL_FILE "C:/Users/moham/Downloads/cfar/FIL/filsrc/mwfil_chifcore.vhd"
+set_global_assignment -name VHDL_FILE "C:/Users/moham/Downloads/cfar/FIL/filsrc/mwfil_controller.vhd"
+set_global_assignment -name VHDL_FILE "C:/Users/moham/Downloads/cfar/FIL/filsrc/mwfil_dut2bus.vhd"
+set_global_assignment -name VERILOG_FILE "C:/Users/moham/Downloads/cfar/FIL/filsrc/dummy_top_FIL_wrapper.v"
+set_global_assignment -name VHDL_FILE "C:/Users/moham/Downloads/cfar/FIL/filsrc/mwfil_chiftop.vhd"
+set_global_assignment -name VHDL_FILE "C:/Users/moham/Downloads/cfar/FIL/filsrc/FILCore.vhd"
+set_global_assignment -name VHDL_FILE "C:/Users/moham/Downloads/cfar/FIL/filsrc/dummy_top_FIL_fil.vhd"
+set_location_assignment PIN_AF14 -to sysclk
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sysclk
+set_location_assignment PIN_AA14 -to sysrst
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sysrst
+set_global_assignment -name SDC_FILE "C:/Users/moham/Downloads/cfar/FIL/filsrc/dummy_top_FIL_fil.sdc"
+set_global_assignment -name TOP_LEVEL_ENTITY dummy_top_FIL_fil

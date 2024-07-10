@@ -24,8 +24,7 @@ module cfar_tb (
   endtask
   task read_data();
     integer file;
-    file = $fopen("C:/Users/moham/Desktop/matlab_trial/cfar_tb.txt",
-                  "r");  // Open the file for reading
+    file = $fopen("cfar_tb.txt", "r");  // Open the file for reading
     if (file != 0) begin
       for (int i = 0; i < 1024; i++) begin
         $fscanf(file, "%d", data_in[i]);  // Read a line from the file
@@ -37,7 +36,7 @@ module cfar_tb (
   endtask
   task capture_peaks();
     int f_handle;
-    f_handle = $fopen("C:/Users/moham/Desktop/matlab_trial/new/cfar_for_matlab.txt", "w");
+    f_handle = $fopen("cfar_for_matlab.txt", "w");
     forever begin
       @(posedge if_.cb.max_valid)
         if (f_handle != 0) begin
