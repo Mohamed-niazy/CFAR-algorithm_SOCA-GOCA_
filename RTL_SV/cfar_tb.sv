@@ -36,7 +36,7 @@ module cfar_tb (
   endtask
   task capture_peaks();
     int f_handle;
-    f_handle = $fopen("C:/Users/moham/Desktop/matlab_trial/new/cfar_for_matlab.txt", "w");
+    f_handle = $fopen("cfar_for_matlab.txt", "w");
     forever begin
       @(posedge if_.cb.max_valid)
         if (f_handle != 0) begin

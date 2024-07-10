@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Wed Jul 10 11:34:50 2024
+Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Standard Edition
+Revision Name : dummy_top_FIL_fil
+Top-level Entity Name : dummy_top_FIL_fil
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 1998
+Total pins : 2
+Total virtual pins : 0
+Total block memory bits : 134,768
+Total DSP Blocks : 4
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 1
+Total DLLs : 0

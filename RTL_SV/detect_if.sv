@@ -1,8 +1,13 @@
 `timescale 1ns / 1ps
+`define SYN
 interface detect_if #(
     parameter POINT_LENGTH = 512,
     INPUT_WIDTH = 29,
     INDEX_WIDTH = 9,
+    THRESHOLD = 2000000,
+    //USE "AVG" TO RUN THE BLCOK IN AVG MODE, "IGNORE" TO RUN THE BLOCK IN IGNORE MODE
+    //IF ANOTHER WORD IS USED AVG MODE WILL RUN AS DEFULT MODE
+    parameter string MODE = "IGNORE"
 ) (
     input logic clk
 );

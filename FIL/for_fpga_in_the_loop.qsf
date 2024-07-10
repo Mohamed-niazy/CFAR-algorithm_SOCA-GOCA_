@@ -1,0 +1,5 @@
+
+set_global_assignment -remove -name VERILOG_FILE ../../RTL_SV/dummy_top_FIL.sv
+set_global_assignment -name SYSTEMVERILOG_FILE  ../../RTL_SV/dummy_top_FIL.sv
+set_global_assignment  -name SYSTEMVERILOG_FILE ../../RTL_SV/detect_if.sv
+set_global_assignment  -name SYSTEMVERILOG_FILE ../../RTL_SV/cfar_algorithm.sv
