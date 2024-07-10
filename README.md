@@ -39,7 +39,7 @@ This project implements two types of CFAR (Constant False Alarm Rate) algorithms
   - `screen_of_simulink_fil.png`: Screenshot of Simulink model used to connect with FPGA.
     ![Simulink Model for FPGA in the Loop](screens/screen_of_simulink_fil.png)
   - `screen_of_command_window.png`: Screenshot of the command window calling Quartus to generate the `.sof` file.
-    ![Command Window for Quartus](screens/screen_of_command_window.png)
+    ![Command Window for Quartus](screens/screen_of_commad_window.png)
 
 ### 5. FIL
 - **Description:** Contains files for FPGA in the loop (FIL) including the bitstream file and Simulink files.
