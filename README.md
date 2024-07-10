@@ -36,6 +36,19 @@ This project implements two types of CFAR (Constant False Alarm Rate) algorithms
   ![RTL Written in SystemVerilog](screens/screen_of_rtl.png)
 - `screen_of_questasim_result.png`: Screenshot of RTL results from simulation in Questasim.
 ![RTL Results from Questasim Simulation](screens/screen_of_questasim_result.png)
+  - `screen_of_simulink_fil.png`: Screenshot of Simulink model used to connect with FPGA.
+    ![Simulink Model for FPGA in the Loop](screens/screen_of_simulink_fil.png)
+  - `screen_of_command_window.png`: Screenshot of the command window calling Quartus to generate the `.sof` file.
+    ![Command Window for Quartus](screens/screen_of_command_window.png)
+
+### 5. FIL
+- **Description:** Contains files for FPGA in the loop (FIL) including the bitstream file and Simulink files.
+- **Contents:**
+  - `FPGA_IN_THE_LOOP_CFAR.slx`: The Simulink model file for connecting with FPGA.
+  - `matlab_script.mlx`: MATLAB script that prepares inputs for Simulink and retrieves results from FPGA.
+  - `dummy_top_FIL.fil.sof`: Bitstream file for FPGA.
+  - `dummy_top_FIL.sv`: SystemVerilog file used in the FIL process.
+  - `for_fpga_in_the_loop.qsf`: Quartus settings file for generating `.sof` file.
 
 ## How to Run the Project
 
@@ -52,6 +65,11 @@ This project implements two types of CFAR (Constant False Alarm Rate) algorithms
    - `detect_if.sv`: The interface between the DUT and the test bench.
    - `top.sv`: The top-level module integrating the DUT and the test bench.
 3. Simulate the design and verify the results against the screenshots provided in the `Screens` folder.
+
+### FPGA in the Loop (FIL) Simulation
+1. Open the Simulink file in the `FIL` folder to connect with the FPGA 
+2. press double click on the fil block then browse on the .sof file and press load and apply.
+3. Use the provided MATLAB scripts to prepare inputs for Simulink and running the simulation and retrieve the results from the FPGA.
 
 ## Contributing
 
